@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s ease-in-out;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 8px;
+    transition: 0.45s ease-in-out;
+    position: relative;
+}
+.logo{
+    width: 300px;
+    height: auto;
+}
+#book-cover{
+    width: 180px;
+    height: 236px;
+}
+#loading-screen{
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+
+/* Loading spinner */
+.spinner-border{
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+
+/* error Message */
+#error-img{
+    display: none;
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+    #error-img{
+        width: 300px;
+        transition: 0.3s ease-in-out;
+    }
+}
